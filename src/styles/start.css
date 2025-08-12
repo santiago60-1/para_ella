@@ -1,0 +1,77 @@
+:root {
+    --background-color: #e0f2fe;
+    --primary-color: #3b82f6;
+    --secondary-color: #60a5fa;
+    --text-color: #1a3f7a;
+    --font-stack: 'PT Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: italic normal 400 16px/22px var(--font-stack);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-stack);
+}
+
+.about_she {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    position: relative;
+    min-height: 300px; /* Asegura espacio para los botones en la parte inferior */
+}
+
+.about_she img {
+    width: 32%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    float: left;
+}
+
+.about_she p {
+    margin-bottom: 1px;
+    text-align: left;
+    display: block;
+}
+
+.about_she a {
+    position: absolute;
+    bottom: 10px;
+}
+
+.about_she a:last-of-type {
+    left: 20px; /* Botón "Back" en la esquina inferior izquierda */
+}
+
+.about_she a:first-of-type {
+    right: 20px; /* Botón "Next" en la esquina inferior derecha */
+}
+
+.about_she button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-stack);
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.about_she button:hover {
+    background-color: var(--background-color);
+    transform: scale(1.05);
+    color: black;
+}
+
+header, footer {
+    text-align: center;
+    margin: 20px 0;
+}
